@@ -1,3 +1,5 @@
+###修复var在并发请求是导致的 实例过期的行为  已修改 let
+
 # node-mysql-promise
 
 
