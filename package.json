@@ -1,6 +1,6 @@
 {
   "name": "zwh-node-mysql-promise",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "node mysql model based on promise",
   "main": "index.js",
   "scripts": {
