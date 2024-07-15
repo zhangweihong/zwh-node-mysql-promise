@@ -615,7 +615,39 @@ mysql.table('table').page(1, 20).countSelect().then(function (data) {
 	}
 });
 ```
-		
+#### startTrans()
+开启事务
+支持select countSelect update delete add 还有options参数的等操作
+```js
+	let t = await mysql.startTrans()
+
+	//在options添加trans
+	let select1 = await mysql.table("test_t_1").select({
+            trans: t
+        });
+	//在options添加trans
+	let update1 = await mysql.table("test_t_1").add({
+            id: "123",
+            test1: "test1",
+            test2: "test2",
+        },{
+            trans: t
+        })
+	await mysql.commit(t)
+	
+```
+	
+#### commit(t)
+提交事务
+```js
+	await mysql.commit(t)
+```
+
+#### rollback(t)
+回滚事务
+```js
+	await mysql.rollback(t)
+```
 
 #### query(sql, parse)
 自定义sql语句进行查询

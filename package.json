@@ -1,10 +1,9 @@
 {
   "name": "zwh-node-mysql-promise",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "node mysql model based on promise",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/zhangweihong/zwh-node-mysql-promise.git"
@@ -25,5 +24,4 @@
     "es6-promise": "^2.0.1",
     "mysql": "^2.5.4"
   }
-  
 }
